@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+ @keyframes move-line {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
+  .animate-hr {
+    animation: move-line 6s infinite;
+    
+  }
+
+  @keyframes move-line-reverse {
+    0% {
+      width: 100%;
+    }
+    100% {
+      width: 0%;
+    }
+  }
+
+  .animate-hr-reverse {
+    animation: move-line-reverse 6s infinite;
+    
+  }
+
+.bg {
+  background: linear-gradient(to bottom, #0E7490 50%, #EF4444 50%);
+}
+
+
+.scroll-cancel {
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
+}
+
+.scroll-cancel::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Webkit-based browsers */
+}
