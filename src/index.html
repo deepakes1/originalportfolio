@@ -11,9 +11,9 @@
   <div class="bg-[url('https://media1.tenor.com/m/yjNK9nq_ZyYAAAAC/shooting-star-galaxy.gif')] w-[100vw] h-[100vh] overflow-hidden"  id = "bg-cont" >
     
     
-    <div class="p-2 md:flex md:gap-5">
+    <div class=" flex flex-col gap-7  md:flex-row md:gap-5 p-2">
       <!-- left side  -->
-      <div class="hidden bg-cyan-700 text-white w-[18vw] h-[95vh] p-3 md:flex flex-col justify-between items-center transition-all hover:bg-transparent hover:text-white rounded-tr-full">
+      <div class="hidden bg-left text-white w-[18vw] h-[95vh] p-3 md:flex flex-col justify-between items-center transition-all hover:bg-transparent hover:text-white rounded-tr-full">
         
         <div>
           <div class="flex justify-center items-center">
@@ -37,7 +37,7 @@
               </svg>
             </div>
 
-            <a class="truncate text-sm lg:text-lg transition-all hover:text-yellow-400 hover:cursor-pointer" href="mailto:deepakoff123@gmail.com">deepakoff123@gmail.com</a>
+            <a class="truncate text-sm lg:text-lg transition-all hover:text-yellow-400 hover:cursor-pointer" href="mailto:deepakoff72@gmail.com">deepakoff72@gmail.com</a>
           </div>
 
           <div class="flex gap-3 items-center mb-3">
@@ -79,16 +79,16 @@
       </div>
 
       <!-- center-side -->
-      <div class="w-[95vw] h-[90vh] md:w-[80vw]  md:h-[90vh] md:mt-[2%] mb-[2%]   bg-red-600 rounded-3xl relative scroll-cancel">
+      <div class="w-[95vw] h-[90vh] md:w-[80vw]  md:h-[90vh] md:mt-[2%] mb-[2%] center-color rounded-3xl relative scroll-cancel">
 
         <!-- fronty animation -->
 
-        <div id ="animation" class="absolute  bottom-11 p-3  lg:bottom-11 lg:left-20 ">
+        <div id ="animation" class="absolute bottom-11 p-3  lg:bottom-11 lg:left-20 ">
           <video src="./assests/New Project [252D67F].mp4" muted autoplay class="h-[75vh] "></video>
         </div>
 
         <!-- about me -->
-        <div class="hidden w-[95vw] h-[90vh] md:w-[75vw]  md:h-[90vh]  transition-all overflow-scroll scroll-cancel text-white bg " id = "homesection">
+        <div class="hidden w-[95vw] h-[90vh] md:w-[75vw] flex flex-col justify-between md:h-[90vh]  transition-all overflow-scroll scroll-cancel text-white bg " id = "homesection">
           <div class="p-5 mb-0 ">
             <h1 class="text-xl md:text-4xl font-bold">Wow, a whole page is just about me!</h1>
             <h1 class="mt-5 text-lg md:text-3xl">Me talking about myself</h1>
@@ -97,8 +97,8 @@
 
             <h1 class="text-lg md:text-3xl mt-5">Skills</h1>
             <ul class="list-disc list-inside">
-              <li class="mt-5 md:text-xl"><span class="text-black">Front-End Development</span> : Proficient in <span class="text-yellow-200">HTML5, CSS3</span> (including libraries such as <span class="text-purple-900">Bootstrap</span> and <span class="text-purple-900">Tailwind</span> ), <span class="text-purple-900">JavaScript</span>, and libraries such as <span class="text-violet-500">React.js</span>.</li>
-              <li class="mt-5 md:text-xl"><span class="text-black">Back-end</span> : <span  class="text-yellow-200">Node.js , Express JS, Firebase, </span>, with a  understanding of database management systems</li>
+              <li class="mt-5 md:text-xl"><span class="text-black font-semibold">Front-End Development</span> : Proficient in <span class="text-yellow-200">HTML5, CSS3</span> (including libraries such as <span class="text-yellow-200">Bootstrap</span> and <span class="text-yellow-200">Tailwind</span> ), <span class="text-yellow-200">JavaScript</span>, and libraries such as <span class="text-yellow-200">React.js</span>.</li>
+              <li class="mt-5 md:text-xl"><span class="text-black font-semibold">Back-end</span> : <span  class="text-yellow-200">Node.js , Express JS, Firebase, </span>, with a  understanding of database management systems</li>
             </ul>
 
 
@@ -158,8 +158,8 @@
             
             </div>
           
-            <div class="md:mt-9">
-              <img src="./assests/waveresume.png" class="w-[100vw] h-[50%] mb-0 md:h-[30%]">
+            <div class="">
+              <img src="./assests/waveresume.png" class="w-[100vw] h-[50%]  md:h-[30%]">
             </div>
 
           </div>
@@ -236,41 +236,36 @@
         </div>
 
         <!-- certificate section --> 
-        <div class="hidden transition-all h-[90vh] p-4 overflow-auto text-white bg " id = "certificatesection">
-
-          <div class="flex gap-8 justify-center  flex-wrap  scroll-none">
-
-            <div class=" w-[70vw] md:w-[20vw]  bg-white">
+        <div class="hidden transition-all h-[90vh] p-4 overflow-auto text-white bg" id="certificatesection">
+          <div class="flex gap-8 justify-center flex-wrap scroll-none">
+            <div class="w-[70vw] md:w-[20vw] bg-white" onclick="showCertificate('static')">
               <img src="./assests/certificate/static.jpg" class="h-full w-full object-cover transition-all hover:scale-110 hover:shadow-2xl hover:shadow-black" alt="">
             </div>
 
-            <div class="w-[70vw] md:w-[20vw] bg-white">
+            <div class="w-[70vw] md:w-[20vw] bg-white" onclick="showCertificate('responsive')">
               <img src="./assests/certificate/responsive.jpg" class="h-full w-full object-cover transition-all hover:scale-110 hover:shadow-2xl hover:shadow-black" alt="">
-              
             </div>
 
-            <div class="w-[70vw] md:w-[20vw] bg-white">
+            <div class="w-[70vw] md:w-[20vw] bg-white" onclick="showCertificate('database')">
               <img src="./assests/certificate/database.jpg" class="h-full w-full object-cover transition-all hover:scale-110 hover:shadow-2xl hover:shadow-black" alt="">
-              
             </div>
 
-            <div class="w-[70vw] md:w-[20vw] bg-white">
-              <img src="./assests/certificate/css live class.jpg" class="h-full w-full object-cover transition-all hover:scale-110 hover:shadow-2xl hover:shadow-black" alt="">
-              
+            <div class="w-[70vw] md:w-[20vw] bg-white" onclick="showCertificate('css-live-class')">
+              <img src="./assests/certificate/css-live-class.jpg" class="h-full w-full object-cover transition-all hover:scale-110 hover:shadow-2xl hover:shadow-black" alt="">
             </div>
 
-            <div class="w-[70vw] md:w-[20vw] bg-white">
+            <div class="w-[70vw] md:w-[20vw] bg-white" onclick="showCertificate('github')">
               <img src="./assests/certificate/github.jpg" class="h-full w-full object-cover transition-all hover:scale-110 hover:shadow-2xl hover:shadow-black" alt="">
-              
             </div>
-
           </div>
 
-          
-          
-
-
-
+          <!-- Modal component -->
+          <div class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 hidden" id="certificate-modal">
+            <div class="flex justify-center items-center h-full">
+              <img src="" class="max-w-full max-h-full" id="certificate-image" alt="">
+              <button class="absolute top-0 right-0 text-4xl text-white" onclick="hideCertificate()">x</button>
+            </div>
+          </div>
         </div>
 
         <!-- contact section -->
@@ -295,7 +290,7 @@
 
                 <div>
                   <h1 class="text-xl">Mail</h1>
-                  <a href="mailto:deepakoff123@gmail.com.com" class="text-lg text-black font-black">deepakoff123@gmail.com</a>
+                  <a href="mailto:deepakoff72@gmail.com" class="text-lg text-black font-black">deepakoff72@gmail.com</a>
                 </div>
               </div>
 

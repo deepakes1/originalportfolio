@@ -32,7 +32,7 @@
   }
 
 .bg {
-  background: linear-gradient(to bottom, #0E7490 50%, #EF4444 50%);
+  background: linear-gradient(to bottom, #639cd9 50%,#5454c5 50%);
 }
 
 
@@ -44,3 +44,12 @@
 .scroll-cancel::-webkit-scrollbar {
   display: none; /* Hide scrollbar in Webkit-based browsers */
 }
+
+
+.center-color {
+  background-color: #1d8cb8aa;
+}
+
+ .bg-left {
+  background-color: #715fd8;
+ }

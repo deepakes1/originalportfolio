@@ -554,6 +554,14 @@ video {
   --tw-contain-style:  ;
 }
 
+.static {
+  position: static;
+}
+
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -564,6 +572,18 @@ video {
 
 .bottom-11 {
   bottom: 2.75rem;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.top-0 {
+  top: 0px;
 }
 
 .mb-0 {
@@ -646,6 +666,10 @@ video {
   height: 100%;
 }
 
+.max-h-full {
+  max-height: 100%;
+}
+
 .w-\[100px\] {
   width: 100px;
 }
@@ -672,6 +696,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.max-w-full {
+  max-width: 100%;
 }
 
 .origin-top {
@@ -724,6 +752,10 @@ video {
 
 .gap-5 {
   gap: 1.25rem;
+}
+
+.gap-7 {
+  gap: 1.75rem;
 }
 
 .gap-8 {
@@ -780,14 +812,9 @@ video {
   border-top-width: 2px;
 }
 
-.bg-cyan-700 {
+.bg-black {
   --tw-bg-opacity: 1;
-  background-color: rgb(14 116 144 / var(--tw-bg-opacity));
-}
-
-.bg-red-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-sky-400 {
@@ -810,8 +837,16 @@ video {
   background-color: rgb(253 224 71 / var(--tw-bg-opacity));
 }
 
+.bg-opacity-50 {
+  --tw-bg-opacity: 0.5;
+}
+
 .bg-\[url\(\'https\:\/\/media1\.tenor\.com\/m\/yjNK9nq_ZyYAAAAC\/shooting-star-galaxy\.gif\'\)\] {
   background-image: url('https://media1.tenor.com/m/yjNK9nq_ZyYAAAAC/shooting-star-galaxy.gif');
+}
+
+.bg-left {
+  background-position: left;
 }
 
 .object-contain {
@@ -863,6 +898,11 @@ video {
   line-height: 2.25rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -886,6 +926,10 @@ video {
   font-weight: 700;
 }
 
+.font-semibold {
+  font-weight: 600;
+}
+
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -894,16 +938,6 @@ video {
 .text-blue-200 {
   --tw-text-opacity: 1;
   color: rgb(191 219 254 / var(--tw-text-opacity));
-}
-
-.text-purple-900 {
-  --tw-text-opacity: 1;
-  color: rgb(88 28 135 / var(--tw-text-opacity));
-}
-
-.text-violet-500 {
-  --tw-text-opacity: 1;
-  color: rgb(139 92 246 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -964,7 +998,7 @@ video {
 }
 
 .bg {
-  background: linear-gradient(to bottom, #0E7490 50%, #EF4444 50%);
+  background: linear-gradient(to bottom, #639cd9 50%,#5454c5 50%);
 }
 
 .scroll-cancel {
@@ -977,6 +1011,14 @@ video {
 .scroll-cancel::-webkit-scrollbar {
   display: none;
   /* Hide scrollbar in Webkit-based browsers */
+}
+
+.center-color {
+  background-color: #1d8cb8aa;
+}
+
+.bg-left {
+  background-color: #715fd8;
 }
 
 .hover\:mb-4:hover {
@@ -1098,10 +1140,6 @@ video {
     margin-top: 8rem;
   }
 
-  .md\:mt-9 {
-    margin-top: 2.25rem;
-  }
-
   .md\:mt-\[2\%\] {
     margin-top: 2%;
   }
@@ -1152,6 +1190,10 @@ video {
 
   .md\:origin-left {
     transform-origin: left;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
   }
 
   .md\:flex-col {

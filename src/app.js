@@ -26,6 +26,17 @@ const card7 = document.getElementById('card7');
 const card_1 = document.getElementById('card-1');
 const card_3 = document.getElementById('card-3');
 
+ function showCertificate(certificateName) {
+    const modal = document.getElementById('certificate-modal');
+    const image = document.getElementById('certificate-image');
+    image.src = `./assests/certificate/${certificateName}.jpg`;
+    modal.classList.remove('hidden');
+  }
+
+  function hideCertificate() {
+    const modal = document.getElementById('certificate-modal');
+    modal.classList.add('hidden');
+  }
 
 card1.addEventListener('click', () => {
   window.open('https://js-mini-project-inw5.vercel.app/');
